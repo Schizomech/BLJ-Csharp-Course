@@ -11,17 +11,12 @@ namespace ConsoleApp3
         static void Main(string[] args)
         {
             int i = 1;
-            Console.WriteLine( "i ist " + i );
-            while ( i < 10 )
+            while (i <= 10)
             {
-                i ++;
-                Console.WriteLine( "i ist " + i );
+                Console.WriteLine(i);
+                i++;
             }
-            if ( i <= 10 )
-            {
-                Console.WriteLine( "i ist " + i );
-                Console.ReadKey();
-            }
+            Console.ReadKey();
         }
     }
 }
