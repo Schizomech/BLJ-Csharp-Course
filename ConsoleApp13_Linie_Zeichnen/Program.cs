@@ -14,6 +14,7 @@ namespace ConsoleApp13
             Console.WriteLine("Wie lang soll die Linie sein?");
             int input = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("Deine Eingabe: " + input);
+
         }
     }
 }
