@@ -10,33 +10,40 @@ namespace ConsoleApp8_Binär
     {
         static void Main(string[] args)
         {
-            string input;
-            int userNumber;
-            int rest;
-            int value;
-            int bin = " ";
-
-            Console.WriteLine("Write a number");
-            input = Console.ReadLine();
-            userNumber = Convert.ToInt32(input);
-            while (Console.ReadKey(true))
-            while (userNumber != 0)
+            bool keypressed = false;
+            while (keypressed == false)
             {
-                rest = userNumber % 2;
-                bin = rest + bin;
-                value = userNumber / 2;
-                userNumber = value;
-            }
+                int userNumber;
+                int rest;
+                int value;
+                string bin = (" ");
+                string input;
 
-            if (userNumber == 0) ;
-            {
-                Console.WriteLine(bin);
-                    
+                Console.WriteLine("Enter Number          enter Q to Quit)");
+                input = Console.ReadLine();
+                if (input == "Q")
+                {
+                    keypressed = true;
+                    Console.WriteLine("Stopping program");
+                }
+                else
+                {
+                    userNumber = Convert.ToInt32(input);
+                    keypressed = false;
+                    while (userNumber != 0)
+                    {
+                        rest = userNumber % 2;
+                        bin = rest + bin;
+                        value = userNumber / 2;
+                        userNumber = value;
+                    }
+
+                    if (userNumber == 0) ;
+                    {
+                        Console.WriteLine(bin);
+                    }
+                }
             }
-            
         }
-
-
-        
     }
 }
