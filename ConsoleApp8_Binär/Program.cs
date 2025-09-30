@@ -10,7 +10,7 @@ namespace ConsoleApp8_Binär
     {
         static void Main(string[] args)
         {
-            int input;
+            string input;
             int userNumber;
             int rest;
             int value;

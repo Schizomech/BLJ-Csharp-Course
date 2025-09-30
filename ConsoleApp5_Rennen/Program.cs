@@ -21,23 +21,9 @@ namespace ConsoleApp5
                     Console.WriteLine("Du schaffst das nicht");
                     return;
                 }
-                        }
             Console.WriteLine("Das sind" + input * 1000 / 400 + " Runden, bist du ready für den Lauf? Yes/No");
             
             
-            Console.ReadLine();
-            if (Console.ReadLine(Yes)) {
-                Console.WriteLine("Jetzt gehts los");
-                    Console.WriteLine("");
-            }
-            else  (Console.ReadLine(No)) {
-                Console.WriteLine("Fucking Bum");
-                Console.WriteLine("Jump");
-            }
-            else {
-                Console.WriteLine("Invalid input");
-            }
-            Console.ReadKey();
         }
 
     }
