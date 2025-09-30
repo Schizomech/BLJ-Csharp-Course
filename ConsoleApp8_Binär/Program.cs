@@ -43,6 +43,7 @@ namespace ConsoleApp8_Binär
                         Console.WriteLine(bin);
                     }
                 }
+                Console.ReadKey();
             }
         }
     }
