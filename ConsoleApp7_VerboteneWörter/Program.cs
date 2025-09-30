@@ -10,10 +10,10 @@ namespace ConsoleApp7
             string[] forbiddenWords =
             {
                 "viagra", "sex", "porno", "fick", "schlampe", "arsch", "fuck",
-                "faggot", "fag", "tranny", "bitch", "hurensohn", "huso"
+                "faggot", "fag", "bitch", "hurensohn", "huso"
             };
 
-            Console.WriteLine("Enter a comment (type /exit to quit):");
+            Console.WriteLine("Enter a comment (type exit to quit):");
             while (true)
             {
                 Console.Write("> ");
@@ -21,7 +21,7 @@ namespace ConsoleApp7
                 if (input == null)
                     continue;
 
-                if (input.Equals("/exit", StringComparison.OrdinalIgnoreCase))
+                if (input.Equals("exit", StringComparison.OrdinalIgnoreCase))
                     break;
 
                 string censored = Censor(input, forbiddenWords);
@@ -54,3 +54,4 @@ namespace ConsoleApp7
         }
     }
 }
+//made with help of Stack overflow forums -Romeo
