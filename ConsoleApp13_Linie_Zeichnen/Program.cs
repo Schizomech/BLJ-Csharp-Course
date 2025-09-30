@@ -11,10 +11,20 @@ namespace ConsoleApp13
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Wie lang soll die Linie sein?");
-            int input = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("Deine Eingabe: " + input);
-
+            Console.WriteLine("Wie long soll die Diagnoale sein?:");
+            int dist = Convert.ToInt32(Console.ReadLine());
+            for (int zeile = 0; zeile < dist; zeile++)
+            {
+                for (int split = 0; split < dist; split++)
+                {
+                    if (split == zeile)
+                        Console.Write(" ");
+                    else
+                        Console.Write("*");
+                }
+                Console.WriteLine();
+            }
+            Console.ReadKey();
         }
     }
 }
