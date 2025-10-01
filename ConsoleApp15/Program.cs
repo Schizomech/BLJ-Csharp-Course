@@ -25,7 +25,6 @@ namespace ConsoleApp15
 
             for (int lines = hoheK; lines >= 1; lines--)
             {
-
                 for (int spaces = lines - 1; spaces >= 1; spaces--)
                 {
                     Console.Write(" ");
@@ -33,12 +32,17 @@ namespace ConsoleApp15
                 }
                 for (int star = 1; star <= count; star++)
                 {
-                    Console.Write("*");
+                    if (rnd.Next(1, 101) <= 10)
+                    {
+                        Console.Write("O");
+                    }
+                    else
+                    {
+                        Console.Write("*");
+                    }
                     Console.Write(" ");
-
                 }
                 count++;
-
                 Console.WriteLine();
             }
             if (hoheB > 0 || breiteB > 0)
